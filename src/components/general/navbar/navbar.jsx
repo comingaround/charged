@@ -8,7 +8,7 @@ const Navbar = () => {
   const hideDropdown = () => setIsDropdownOpen(false);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <NavLink className="navbar-brand" to="/">
         <div id="logo">
           <img src="/logo.png" alt="" />
@@ -21,12 +21,12 @@ const Navbar = () => {
         <ul className="navbar-nav">
             <li className="nav-item dropdown" onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                 <NavLink className="nav-link" to="/" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded={isDropdownOpen} activeclassname="active">
-                    Home
+                    Home &darr;
                 </NavLink>
                 <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdownMenuLink">
-                    <NavLink className="dropdown-item" to="/" activeclassname="active">Home <span className="dropdown-item-ani"></span></NavLink>
-                    <NavLink className="dropdown-item" to="/taxi" activeclassname="active">Taxi <span className="dropdown-item-ani"></span></NavLink>
-                    <NavLink className="dropdown-item" to="/driver" activeclassname="active">Driver <span className="dropdown-item-ani"></span></NavLink>
+                    <NavLink className="dropdown-item" to="/" activeclassname="active">Home</NavLink>
+                    <NavLink className="dropdown-item" to="/taxi" activeclassname="active">Taxi</NavLink>
+                    <NavLink className="dropdown-item" to="/driver" activeclassname="active">Driver</NavLink>
                 </div>
             </li>
           <li className="nav-item">

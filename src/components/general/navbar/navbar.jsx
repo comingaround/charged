@@ -24,9 +24,9 @@ const Navbar = () => {
                     Home
                 </NavLink>
                 <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdownMenuLink">
-                    <NavLink className="dropdown-item" to="/" activeclassname="active">Home</NavLink>
-                    <NavLink className="dropdown-item" to="/taxi" activeclassname="active">Taxi</NavLink>
-                    <NavLink className="dropdown-item" to="/driver" activeclassname="active">Driver</NavLink>
+                    <NavLink className="dropdown-item" to="/" activeclassname="active">Home <span className="dropdown-item-ani"></span></NavLink>
+                    <NavLink className="dropdown-item" to="/taxi" activeclassname="active">Taxi <span className="dropdown-item-ani"></span></NavLink>
+                    <NavLink className="dropdown-item" to="/driver" activeclassname="active">Driver <span className="dropdown-item-ani"></span></NavLink>
                 </div>
             </li>
           <li className="nav-item">

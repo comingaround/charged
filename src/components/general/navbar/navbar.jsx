@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light">
       <NavLink className="navbar-brand" to="/">
         <div id="logo">
-          <img src="/logo.png" alt="" />
+          <h3 style={{fontStyle:"italic"}}> Charged </h3>
         </div>
       </NavLink>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded={isDropdownOpen} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>

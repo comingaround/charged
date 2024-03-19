@@ -1,0 +1,102 @@
+footer {
+    padding: 126px 10% 56px;
+    margin: 48px 32px 0;
+    width: calc(100% - 64px);
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+footer a {
+    color: white;
+    line-height: 32px;
+}
+footer .footer_text h3 {
+    padding-bottom: 12px;
+}
+footer .footer_links {
+    padding: 0;
+}
+footer .footer_links h3 {
+    padding-bottom: 16px;
+}
+footer .footer_bottom {
+    padding: 126px 0 32px;
+}
+footer .footer_app {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+footer .footer_app_android {
+    padding: 10px 24px;
+    background-color: white;
+    border-radius: 30px;
+}
+footer .footer_app_android a {
+    color: black;
+}
+footer .footer_app_apple {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+footer .footer_app_android a,
+footer .footer_app_apple a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+footer .footer_item {
+    position: relative;
+}
+footer .footer_item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    z-index: 2;
+    will-change: transform;
+    bottom: 0px;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition: transform 0.35s cubic-bezier(0.24, 0.28, 0.63, 1);
+}
+footer .footer_item:hover::after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+@media (max-width: 768px) {
+    footer {
+        margin: 48px 0 0;
+        padding: 63px 10% 28px;
+        width: 100%;
+    }
+    footer .footer_bottom {
+        padding: 63px 0 32px;
+    }
+    footer .footer_links {
+        text-align: center;
+        padding-top: 32px;
+    }
+    footer .footer_app {
+        justify-content: center;
+    }
+    footer .footer_policy {
+        padding-top: 24px;
+    }
+    footer .footer_policy > div > div a {
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+    footer .footer_policy > div > div a {
+        padding-bottom: 12px;
+    }
+    footer .footer_links h3 {
+        padding: 24px 0 4px;
+    }
+}

@@ -1,14 +1,11 @@
 #logo {
-    height: 48px;
-    width: 150px;
-    margin-left: 5%;
-}
-#logo img {
-    height: 100%;
-    width: 100%;
+    margin-left: 15%;
 }
 .navbar {
     padding-right: 16px;
+}
+.navbar h3 {
+    margin: 0;
 }
 .navbar-nav .nav-link {
     color: black;
@@ -79,6 +76,18 @@
 #navbarNavDropdown > ul li a {
     padding: 0;
     line-height: 32px;
+}
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
 @media (max-width: 992px) {
     .navbar-nav {

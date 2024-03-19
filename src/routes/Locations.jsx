@@ -1,4 +1,4 @@
-import Navbar from "../components/general/navbar/navbar";
+
 
 function Locations() {
     return(

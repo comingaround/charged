@@ -3,7 +3,7 @@ import Navbar from "../components/general/navbar/navbar";
 function About() {
     return(
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <h1>About</h1>
         </>
     );

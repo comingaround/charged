@@ -3,7 +3,7 @@ import Navbar from "../components/general/navbar/navbar";
 function Franchise() {
     return(
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <h1>Franchise</h1>
         </>
     );

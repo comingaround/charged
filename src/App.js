@@ -11,11 +11,37 @@ import Support from './routes/Support';
 import Terms from './routes/Terms';
 import Privacy from './routes/Privacy';
 import Safety from './routes/Safety';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { t, i18n } = useTranslation();
+  const languages = [
+    { code: "en", name: "English" },
+    { code: "lv", name: "Latvian" },
+  ];
+  const getCurrentLanguageName = () => {
+    const currentLanguage = languages.find(lang => lang.code === i18n.language);
+    return currentLanguage ? currentLanguage.name : "Unknown Language";
+  };
+
+
   return (
     <>
       <Navbar />
+      <h1 style={{color:"green"}}>{t("Services")}</h1>
+      <div className="lang_section">
+        <h3>Current language: {getCurrentLanguageName()}</h3>
+        <div className="lang_buttons">
+          {languages.map((language) => (
+            <button
+              onClick={() => i18n.changeLanguage(language.code)}
+              key={language.code}
+            >
+              {language.name}
+            </button>
+          ))}
+        </div>
+      </div>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

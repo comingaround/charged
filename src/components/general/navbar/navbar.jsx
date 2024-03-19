@@ -21,10 +21,10 @@ const Navbar = () => {
         <ul className="navbar-nav">
             <li className="nav-item dropdown" onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                 <NavLink className="nav-link" to="/" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded={isDropdownOpen} activeclassname="active">
-                    Home &darr;
+                    Services &darr;
                 </NavLink>
                 <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdownMenuLink">
-                    <NavLink className="dropdown-item" to="/" activeclassname="active">Home</NavLink>
+                    <NavLink className="dropdown-item" to="/" activeclassname="active">Scooters</NavLink>
                     <NavLink className="dropdown-item" to="/taxi" activeclassname="active">Taxi</NavLink>
                     <NavLink className="dropdown-item" to="/driver" activeclassname="active">Driver</NavLink>
                 </div>

@@ -38,6 +38,10 @@ footer > .container-fluid.footer_bottom > div > .footer_policy > div > div > div
     footer > .container-fluid.footer_bottom > div > .footer_policy > div > div > div {
         position: relative;
         margin: 0 auto;
-        padding-left: 52px;
+        padding-left: 48px;
+    }
+    #navbarNavDropdown > ul > li:nth-child(5) > div  {
+        padding: 0;
+        width: 25%;
     }
 }

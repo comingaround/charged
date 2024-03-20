@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdownMenuLink">
                     <NavLink className="dropdown-item" to="/" activeclassname="active"><span>{t("Scooters")}</span></NavLink>
                     <NavLink className="dropdown-item" to="/taxi" activeclassname="active"><span>{t("Taxi")}</span></NavLink>
-                    <NavLink className="dropdown-item" to="/driver" activeclassname="active"><span>{t("Driver")}</span></NavLink>
+                    <NavLink className="dropdown-item" to="/driver" activeclassname="active"><span>{t("Become a driver")}</span></NavLink>
                 </div>
             </li>
           <li className="nav-item">

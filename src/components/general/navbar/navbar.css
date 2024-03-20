@@ -1,9 +1,6 @@
 #logo {
     margin-left: 15%;
 }
-.navbar {
-    padding-right: 16px;
-}
 .navbar h3 {
     margin: 0;
 }
@@ -69,6 +66,9 @@
 .navbar .dropdown-menu .dropdown-item:hover {
     text-decoration: underline;
 }
+#navbarNavDropdown {
+    position: relative;
+}
 #navbarNavDropdown > ul {
     padding-left: 8%;
     gap: 32px;
@@ -76,18 +76,6 @@
 #navbarNavDropdown > ul li a {
     padding: 0;
     line-height: 32px;
-}
-.dropdown-menu {
-    display: block;
-    opacity: 0;
-    transform: translateY(-10px);
-    visibility: hidden;
-    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-}
-.dropdown-menu.show {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
 }
 @media (max-width: 992px) {
     .navbar-nav {
@@ -99,6 +87,7 @@
         color: white!important;
     }
     #navbarNavDropdown > ul {
+        padding-top: 12px;
         gap: 12px;
     }
     .nav-link.active::before {

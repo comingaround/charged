@@ -1,0 +1,32 @@
+.lang_section {
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    border-radius: 30px;
+}
+.lang_section h6 {
+    margin: 8px 0;
+}
+.lang_section:hover .lang_buttons {
+    visibility: visible;
+}
+.lang_buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    padding-top: 10px;
+    visibility: hidden;
+}
+@media (max-width: 992px) {
+    .lang_section {
+        position: static;
+        border: 1px solid white;
+        margin-bottom: 12px;
+    }
+    .lang_section h6 {
+        color: white;
+    }
+}

@@ -1,20 +1,22 @@
 .lang_section {
     background-color: black;
-    width: 150px;
+    width: auto;
     text-align: center;
     position: absolute;
     right: 10px;
     border-radius: 30px;
     cursor: pointer;
+    padding: 0 12px;
 }
 .lang_section h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     margin: 8px 0;
     color: white;
     font-weight: 400;
+    text-wrap: nowrap;
 }
 .lang_section h6 > svg {
     margin-top: 3px;
@@ -29,6 +31,9 @@ footer > .container-fluid.footer_bottom > div > .footer_policy > div > div > div
     .lang_section {
         position: static;
         margin-bottom: 12px;
+    }
+    .lang_section h6 {
+        justify-content: flex-start;
     }
     footer > .container-fluid.footer_bottom > div > .footer_policy > div > div > div {
         position: relative;

@@ -25,31 +25,6 @@ footer .footer_links h3 {
 footer .footer_bottom {
     padding: 126px 0 32px;
 }
-footer .footer_app {
-    display: flex;
-    justify-content: flex-start;
-    gap: 32px;
-}
-footer .footer_app_android {
-    padding: 10px 24px;
-    background-color: white;
-    border-radius: 30px;
-}
-footer .footer_app_android a {
-    color: black;
-}
-footer .footer_app_apple {
-    padding: 10px 24px;
-    border-radius: 30px;
-    border: 1px solid white;
-}
-footer .footer_app_android a,
-footer .footer_app_apple a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
 footer .footer_item {
     position: relative;
 }

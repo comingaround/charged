@@ -1,30 +1,28 @@
 import { useTranslation } from "react-i18next";
 import Down_butt from "../../general/down_butt/down_butt";
 import Infinite_text from "../../general/infinite_text/infinite_text";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import "./home_hero.css";
 import "./hh_p2.css"
 
 function Home_hero() {
     const { t } = useTranslation();
     const [topPosition, setTopPosition] = useState(0);
+    const hhP2Ref = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
+            if (!hhP2Ref.current) return;
+            const hhP2Bottom = hhP2Ref.current.getBoundingClientRect().bottom + window.pageYOffset;
+            const maxScroll = hhP2Bottom - window.innerHeight;
             const scrollPosition = window.scrollY;
-            const maxScroll = 1350;    
-            // Increase this factor to make the scrolling effect faster
-            const scrollSpeedFactor = 1.5; // Adjust this factor to control the speed   
-            // Adjusted startPosition and endPosition to control the start and end of the scrolling effect more precisely
-            const startPosition = 0; // Start moving immediately on scroll
-            const endPosition = document.body.offsetHeight - window.innerHeight; // Stop moving at the bottom of the page   
-            // Apply the scrollSpeedFactor to increase the speed of the effect
-            let calculatedTop = (maxScroll * (scrollPosition - startPosition) * scrollSpeedFactor) / (endPosition - startPosition);   
-            // Constrain the top position to the maxScroll value
+            const scrollSpeedFactor = 2;  
+            const endPosition = document.body.offsetHeight - window.innerHeight;   
+            let calculatedTop = (maxScroll * (scrollPosition * scrollSpeedFactor)) / endPosition;   
             calculatedTop = Math.min(maxScroll, Math.max(0, calculatedTop));
-    
             setTopPosition(calculatedTop);
         };
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -60,7 +58,7 @@ function Home_hero() {
                     </div>
                 </div>
             </div>
-            <div className="hh_p2">
+            <div className="hh_p2" ref={hhP2Ref}>
                 <div className="hh_p2_1">
 
                 </div>

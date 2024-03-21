@@ -58,6 +58,15 @@
     z-index: 1;
     overflow: hidden;
 }
+@media (max-width: 1025px) {
+    .hh_2 {
+        width: 90%;
+    }
+    .hh_2 h1,
+    .hh_2 h3 {
+        width: 90%;
+    }
+}
 @media (max-width: 992px) {
     .home_hero {
         height: 95vh;

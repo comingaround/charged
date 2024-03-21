@@ -28,10 +28,25 @@
     .hh_p2_2 section {
         width: 80%;
     }
+    .hh_p2 > .hh_p2_2 h1 {
+        font-size: 2.25rem;
+    }
+    .hh_p2 > .hh_p2_2 h3 {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 1024px) {
     .hh_p2_2 section {
         width: 100%;
         padding-right: 8px;
+    }
+}
+@media (max-width: 992px) {
+    .hh_p2_1 {
+        display: none;
+    }
+    .hh_p2_2 {
+        width: 100%;
+        padding: 0 16px;
     }
 }

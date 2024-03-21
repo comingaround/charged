@@ -51,11 +51,19 @@ footer .footer_policy a {
     text-align: center;
     padding-left: 24px;
 }
+@media (max-width: 1024px) {
+    #root > footer > div.container-fluid.footer_bottom > div > div.col-lg-6.col-md-12.footer_policy > div > div {
+        flex-wrap: nowrap;
+    }
+}
 @media (max-width: 768px) {
     footer {
         margin: 48px 0 0;
         padding: 63px 10% 28px;
         width: 100%;
+    }
+    #root > footer > div.container-fluid.footer_bottom > div > div.col-lg-6.col-md-12.footer_policy > div > div {
+        flex-wrap: wrap;
     }
     footer .footer_bottom {
         padding: 63px 0 32px;

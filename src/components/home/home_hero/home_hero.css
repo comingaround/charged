@@ -31,11 +31,15 @@
     width: 80%;
     height: 80%;
     margin: auto;
+    position: relative;
 }
 .hh1_images .image_array {
-    width: 60%;
+    width: 55%;
+    min-width: 300px;
     aspect-ratio:  1 / 2;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    right: 0;
     z-index: 10;
     float: right;
 }

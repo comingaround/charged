@@ -6,7 +6,7 @@ import lv from "./i18n/lv/translation.json";
 i18n
   .use(initReactI18next)
   .init({
-    debug: true,
+    // debug: true,
     fallbackLng: "en",
     interpolation: {
       escapeValue: false,

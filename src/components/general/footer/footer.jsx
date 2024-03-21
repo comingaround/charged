@@ -14,7 +14,7 @@ function Footer() {
                     <div className="col-lg-6 col-md-12 footer_text">
                        <h3>{t("Stay Connected with")} Charge</h3>
                        <h5>
-                            {t("For updates, offers, and more, follow us on our social media channels and subscribe to our newsletter.")}
+                            {t("For updates, offers, and more, follow us on our social media channels and subscribe to our newsletter.")} &nbsp;
                             {t("Ride smart, ride green, ride")}
                             &nbsp; CHARGE.
                         </h5>

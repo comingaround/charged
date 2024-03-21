@@ -1,0 +1,17 @@
+.home_hero_one .hh0_one .phone_section {
+    width: 55%;
+    min-width: 400px;
+}
+.home_hero_one .hh0_one .phone_section img {
+    width: 100%;
+}
+.hh0_item1 {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone_section {
+    border: 1px solid purple;
+
+}

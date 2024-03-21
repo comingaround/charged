@@ -1,9 +1,9 @@
-import Home_hero_one from "../components/home/home_hero_one/home_hero_one";
+import Home_hero from "../components/home/home_hero/home_hero";
 
 function Home() {
     return(
         <>
-            <Home_hero_one />
+            <Home_hero />
         </>
     );
 }

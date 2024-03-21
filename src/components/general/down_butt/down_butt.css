@@ -24,14 +24,14 @@
     align-items: center;
     gap: 12px;
 }
-.hh0_one > div > .hh0_item2 > div > div .app_android {
+.hh_2 > div .app_android {
     background-color: transparent;
     border: 1px solid black;
 }
-.hh0_one > div > .hh0_item2 > div > div .app_apple {
+.hh_2 > div .app_apple {
     border: none;
 }
-.hh0_one > div > .hh0_item2 > div > div .app_apple a {
+.hh_2 > div .app_apple a {
     color: white;
 }
 @media (max-width: 992px) {

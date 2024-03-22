@@ -35,8 +35,8 @@
     margin-top: 0px;
 }
 .hh1_images .image_array {
-    width: 19vw;
-    min-width: 250px;
+    width: 18vw;
+    min-width: 225px;
     aspect-ratio:  1 / 2;
     position: absolute;
     right: 0;
@@ -65,6 +65,9 @@
     .hh_2 h1,
     .hh_2 h3 {
         width: 90%;
+    }
+    .hh1_images {
+        top: 64px;
     }
 }
 @media (max-width: 992px) {

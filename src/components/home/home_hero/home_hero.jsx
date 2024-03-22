@@ -19,17 +19,20 @@ function Home_hero() {
 
     useEffect(() => {
         const handleScroll = () => {
+            if (window.innerWidth <= 1024) {
+                return;
+            }
             if (!hhP2Ref.current) return;
-            const hhP2Bottom = hhP2Ref.current.getBoundingClientRect().bottom + window.pageYOffset;
+            const rect = hhP2Ref.current.getBoundingClientRect();
+            const hhP2Bottom = rect.bottom + window.pageYOffset;
             const maxScroll = hhP2Bottom - window.innerHeight;
             const scrollPosition = window.scrollY;
-            const scrollSpeedFactor = 2;  
-            const endPosition = document.body.offsetHeight - window.innerHeight;   
-            let calculatedTop = (maxScroll * (scrollPosition * scrollSpeedFactor)) / endPosition;   
+            const scrollSpeedFactor = 2.5;
+            const endPosition = document.body.offsetHeight - window.innerHeight;
+            let calculatedTop = (maxScroll * (scrollPosition * scrollSpeedFactor)) / endPosition;
             calculatedTop = Math.min(maxScroll, Math.max(0, calculatedTop));
             setTopPosition(calculatedTop);
         };
-
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -45,7 +48,7 @@ function Home_hero() {
             <div className="home_hero">
                 <div className="hh_1">
                     <div className="hh1_images">
-                        <div className="image_array" style={{ top: `${topPosition}px`, position: 'absolute' }}>
+                        <div className="image_array" style={{ top: `${topPosition}px`}}>
                             <img style={{zIndex: "10"}} className="phone_frame" src="/phone/working_frame.png" alt="ss" />
                             <img style={{ zIndex: hoveredImage === 'phone_image1' ? 4 : 3 }} className="phone_image1" src="/phone/phone_image1.jpg" alt="" />
                             <img style={{ zIndex: hoveredImage === 'phone_image2' ? 4 : 1 }} className="phone_image2" src="/phone/phone_image2.jpg" alt="" />

@@ -83,7 +83,9 @@ function Footer() {
                     <div className="col-lg-6 col-md-12 footer_policy">
                         <div className="container-fluid">
                             <div className="row">
-                                <Lang_butt />
+                                <div className="col-md-4 col-sm-12 footer_lang">
+                                    <Lang_butt />
+                                </div>
                                 <Link className="col-md-4 col-sm-12" to='/privacy'><span>{t("Privacy Policy")}</span></Link>
                                 <Link className="col-md-4 col-sm-12" to="/terms"><span>{t("Terms of Service")}</span></Link>
                             </div>

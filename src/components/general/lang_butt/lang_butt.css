@@ -21,10 +21,10 @@
 .lang_section h6 > svg {
     margin-top: 3px;
 }
-footer > .container-fluid.footer_bottom > div > .footer_policy > div > div > div {
+footer > .footer_bottom > div > .footer_policy > div > div > div > div {
     position: relative;
 }
-footer > .container-fluid.footer_bottom > div > .footer_policy > div > div > div h6 {
+footer > .footer_bottom > div > .footer_policy > div > div > div > div h6 {
     justify-content: flex-start;
 }
 @media (max-width: 992px) {

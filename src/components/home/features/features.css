@@ -59,3 +59,9 @@
         height: 110%;
     } 
 }
+@media (max-width: 576px) {
+    .features_left > div img {
+        width: 90%;
+        height: 120%;
+    }
+}

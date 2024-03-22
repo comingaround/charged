@@ -63,3 +63,17 @@
         padding: 0 16px;
     }
 }
+@media (max-width: 576px) {
+    .hh_p2_2 div {
+        width: 100%;
+    }
+    .hh_p2_2 section {
+        width: 100%;
+    }
+    .hh_p2 > .hh_p2_2 h1 {
+        font-size: 2rem;
+    }
+    .hh_p2 > .hh_p2_2 h3 {
+        font-size: 1.25rem;
+    }
+}

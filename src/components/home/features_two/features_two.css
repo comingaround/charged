@@ -25,8 +25,8 @@
         margin: auto 12px;
     }
 }
-@media (max-width: 768px) {
-    .features_two_left {
+@media (max-width: 767px) {
+    .features_two_left > div {
         border-right: none;
     }
     .features_two_left {

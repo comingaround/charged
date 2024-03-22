@@ -44,4 +44,8 @@ footer > .footer_bottom > div > .footer_policy > div > div > div > div h6 {
         padding: 0;
         width: 25%;
     }
+    footer > .footer_bottom > div > .footer_policy > div > div > div > div h6 {
+        justify-content: center;
+        padding-right: 22px;
+    }
 }

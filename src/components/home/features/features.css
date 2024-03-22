@@ -1,5 +1,5 @@
 .features_main {
-    margin: 0 0 160px;
+    margin: 0 0 240px;
 }
 .features_left {
     display: flex;
@@ -50,4 +50,12 @@
     .features_left {
         margin-bottom: 64px;
     }
+}
+@media (max-width: 768px) {
+    .features_main {
+        margin: 0 0 120px;
+    }
+    .features_left > div img {
+        height: 110%;
+    } 
 }

@@ -14,17 +14,25 @@
     align-items: flex-start;
     flex-flow: column nowrap;
     gap: 32px;
+    cursor: pointer;
 }
-.hh_p2_2 section {
-    width: 60%;
-}
+
 .hh_p2_2 section h3 {
     font-weight: 400;
 }
 .hh_p2_2 div {
     display: flex;
+    opacity: 0.5;
+    width: 70%;
+    gap: 8px;
 }
-@media (max-width: 1440px) {
+.hh_p2_2 div:hover {
+    opacity: 1;
+}
+.hh_p2_2 div.hovered {
+    opacity: 1;
+}
+@media (max-width: 1560px) {
     .hh_p2_2 section {
         width: 80%;
     }

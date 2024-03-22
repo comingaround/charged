@@ -9,6 +9,13 @@ function Home_hero() {
     const { t } = useTranslation();
     const [topPosition, setTopPosition] = useState(0);
     const hhP2Ref = useRef(null);
+    const [hoveredImage, setHoveredImage] = useState(null);
+    const [lastHoveredDiv, setLastHoveredDiv] = useState(null);
+
+    const onHoverImage = (imageName) => {
+        setHoveredImage(imageName);
+        setLastHoveredDiv(imageName);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,10 +46,10 @@ function Home_hero() {
                 <div className="hh_1">
                     <div className="hh1_images">
                         <div className="image_array" style={{ top: `${topPosition}px`, position: 'absolute' }}>
-                            <img style={{zIndex: "10"}} className="phone_frame" src="/phone/phone_frame_test.jpg" alt="ss" />
-                            <img className="phone_image1" src="/phone/phone_image1.jpg" alt="" />
-                            <img className="phone_image2" src="/phone/phone_image2.jpg" alt="" />
-                            <img className="phone_image3" src="/phone/phone_image3.jpg" alt="" />
+                            <img style={{zIndex: "10"}} className="phone_frame" src="/phone/working_frame.png" alt="ss" />
+                            <img style={{ zIndex: hoveredImage === 'phone_image1' ? 4 : 3 }} className="phone_image1" src="/phone/phone_image1.jpg" alt="" />
+                            <img style={{ zIndex: hoveredImage === 'phone_image2' ? 4 : 1 }} className="phone_image2" src="/phone/phone_image2.jpg" alt="" />
+                            <img style={{ zIndex: hoveredImage === 'phone_image3' ? 4 : 1 }} className="phone_image3" src="/phone/phone_image3.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -64,22 +71,25 @@ function Home_hero() {
                 </div>
                 <div className="hh_p2_2">
                     <h1>{t("3 Easy Steps to Start Riding with CHARGE")}</h1>
-                    <div>
-                        <h1>01. &nbsp;</h1>
+                    <div className={`hh_p2_2_one ${lastHoveredDiv === 'phone_image1' ? 'hovered' : ''}`}
+                        onMouseEnter={() => onHoverImage('phone_image1')}>
+                        <h1>01.</h1>
                         <section>
                             <h1>{t("Download the App:")}</h1>
                             <h3>{t("Get the CHARGE app from your favorite app store. Sign up to access our wide network of e-scooters across the city.")}</h3>
                         </section>
                     </div>
-                    <div>
-                        <h1>02. &nbsp;</h1>
+                    <div className={`hh_p2_2_two ${lastHoveredDiv === 'phone_image2' ? 'hovered' : ''}`}
+                        onMouseEnter={() => onHoverImage('phone_image2')}>
+                        <h1>02.</h1>
                         <section>
                             <h1>{t("Find & Unlock:")}</h1>
                             <h3>{t("Use the app to find a nearby scooter. Scan the QR code to unlock it and start your ride.")}</h3>
                         </section>
                     </div>
-                    <div>
-                        <h1>03. &nbsp;</h1>
+                    <div className={`hh_p2_2_three ${lastHoveredDiv === 'phone_image3' ? 'hovered' : ''}`}
+                        onMouseEnter={() => onHoverImage('phone_image3')}>
+                        <h1>03.</h1>
                         <section>
                             <h1>{t("Enjoy Your Ride:")}</h1>
                             <h3>{t("Explore the city on your terms. When you're done, park responsibly and end your ride with a tap on the app.")}</h3>

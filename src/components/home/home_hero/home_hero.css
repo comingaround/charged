@@ -32,16 +32,16 @@
     height: 80%;
     margin: auto;
     position: relative;
+    margin-top: 0px;
 }
 .hh1_images .image_array {
-    width: 55%;
-    min-width: 300px;
+    width: 19vw;
+    min-width: 250px;
     aspect-ratio:  1 / 2;
     position: absolute;
-    top: 0px;
     right: 0;
     z-index: 10;
-    float: right;
+    overflow: hidden;
 }
 .hh1_images .image_array img {
     width: 100%;

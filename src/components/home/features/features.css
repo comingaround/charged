@@ -59,13 +59,16 @@
     .features_left {
         margin-bottom: 64px;
     }
+    .features_left > div img {
+        height: 110%;
+    } 
 }
 @media (max-width: 768px) {
     .features_main {
         margin: 0 0 120px;
     }
     .features_left > div img {
-        height: 110%;
+        height: 120%;
     } 
 }
 @media (max-width: 576px) {

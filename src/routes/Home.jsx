@@ -4,6 +4,7 @@ import Features_two from "../components/home/features_two/features_two";
 import Home_hero_two from "../components/home/home_hero_two/home_hero_two";
 import MySlider from "../components/general/slider/slider";
 import Home_safety from "../components/home/home_safety/home_safety";
+import Faq from "../components/home/faq/faq";
 
 function Home() {
     return(
@@ -14,6 +15,7 @@ function Home() {
             <Home_hero_two />
             <MySlider />
             <Home_safety />
+            <Faq />
         </>
     );
 }

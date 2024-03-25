@@ -1,0 +1,50 @@
+#faq {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 128px 0;
+}
+#faq .row {
+    width: 100%;
+}
+#faq .faq_left h1 {
+    font-size: 6rem;
+    width: 50%;
+    margin: 0 auto;
+}
+#faq .faq_right section h4 {
+    font-weight: 450;
+    border-bottom: 1px solid gray;
+    padding: 24px 0;
+    cursor: pointer;
+    user-select: none;
+}
+@media (max-width: 1441px) {
+    #faq .faq_left h1 {
+        font-size: 5rem;
+        width: 70%;
+        margin: 0 auto; 
+    }
+}
+@media (max-width: 1024px) {
+    #faq .faq_left h1 {
+        font-size: 4rem;
+        width: 90%;
+        margin: 0 auto; 
+    }
+}
+@media (max-width: 769px) {
+    #faq .faq_left h1 {
+        font-size: 4rem;
+        width: 100%;
+        margin: 0 auto; 
+        text-align: center;
+        padding-bottom: 24px;
+    }
+}
+@media (max-width: 526px) {
+    #faq {
+        padding: 32px 0;
+    }
+}

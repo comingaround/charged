@@ -63,9 +63,15 @@
     font-weight: 400;
     border-right: 1px solid black;
     padding: 0 24px;
+    text-align: center;
 }
 .hs_sub_right > div > div {
     padding-bottom: 24px;
+}
+@media (max-width: 1024px) {
+    .hs_left > div img {
+        height: 100%;
+    }
 }
 @media (max-width: 769px) {
     .home_safety_main {
@@ -76,6 +82,9 @@
         margin: 0 12px;
         margin-top: 24px;
         width: calc(100% - 24px);
+    }
+    .hs_left > div img {
+        height: 120%;
     }
 }
 @media (max-width: 526px) {

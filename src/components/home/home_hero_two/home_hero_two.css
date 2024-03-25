@@ -52,12 +52,18 @@
         justify-content: center;
     }
     .hh_two_right > div {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
     }
     .hh_two_left > div {
         width: 90%;
         margin: 0 auto;
         padding-top: 24px;
+    }
+}
+@media (max-width: 526px) {
+    .hh_two_right > div {
+        width: 90%;
+        margin: 0 auto;
     }
 }

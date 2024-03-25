@@ -88,6 +88,11 @@
         display: flex;
     }
 }
+@media (max-width: 769px) {
+    .moving_text_cont {
+        top: -40px;
+    }
+}
 @media (max-width: 576px) {
     .hh_2 {
         width: 85%;

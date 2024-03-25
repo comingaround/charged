@@ -32,6 +32,11 @@
     border-radius: 30px;
     padding: 12px 24px;
 }
+.hh_two_right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .hh_two_right > div {
     width: 60%;
     margin-left: 10%;
@@ -42,6 +47,9 @@
 @media (max-width: 768px) {
     .home_hero_two {
         margin: 24px auto;
+    }
+    .hh_two_right {
+        justify-content: center;
     }
     .hh_two_right > div {
         width: 60%;

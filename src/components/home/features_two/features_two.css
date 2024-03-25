@@ -23,11 +23,24 @@
     .features_two {
         width: calc(100% - 24px);
         margin: auto 12px;
+        margin-bottom: 32px;
+    }
+    .features_two_left {
+        padding-top: 48px;
+    }
+    .features_two_right h2 {
+        padding: 0 24px;
+    }
+}
+@media (max-width: 769px) {
+    .features_two_left > div {
+        padding:  0 12px 0 24px;
     }
 }
 @media (max-width: 767px) {
     .features_two_left > div {
         border-right: none;
+        padding:  0 12px;
     }
     .features_two_left {
         border-bottom: 1px solid black;

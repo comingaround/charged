@@ -3,6 +3,7 @@ import Features from "../components/home/features/features";
 import Features_two from "../components/home/features_two/features_two";
 import Home_hero_two from "../components/home/home_hero_two/home_hero_two";
 import MySlider from "../components/general/slider/slider";
+import Home_safety from "../components/home/home_safety/home_safety";
 
 function Home() {
     return(
@@ -12,6 +13,7 @@ function Home() {
             <Features_two />
             <Home_hero_two />
             <MySlider />
+            <Home_safety />
         </>
     );
 }

@@ -25,9 +25,9 @@ function Home_hero() {
             if (!hhP2Ref.current) return;
             const rect = hhP2Ref.current.getBoundingClientRect();
             const hhP2Bottom = rect.bottom + window.pageYOffset;
-            const maxScroll = hhP2Bottom - window.innerHeight;
+            const maxScroll = (hhP2Bottom - window.innerHeight) * 1.1;
             const scrollPosition = window.scrollY;
-            const scrollSpeedFactor = 4;
+            const scrollSpeedFactor = 5.5;
             const endPosition = document.body.offsetHeight - window.innerHeight;
             let calculatedTop = (maxScroll * (scrollPosition * scrollSpeedFactor)) / endPosition;
             calculatedTop = Math.min(maxScroll, Math.max(0, calculatedTop));

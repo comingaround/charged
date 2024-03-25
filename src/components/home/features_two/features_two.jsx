@@ -22,7 +22,7 @@ function Features_two() {
                     </div>
                     <div className="col-md-6 features_two_right">
                         <h2>
-                            Hopp around the neighbourhood and reduce <br /> your carbon footprint.
+                            &#11044; {t("Hopp around the neighbourhood and reduce your carbon footprint.")}
                         </h2>
                     </div>
                 </div>

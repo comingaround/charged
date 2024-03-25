@@ -17,6 +17,9 @@
     border: 1px solid white;
     background-color: black;
 }
+.down_butt .app_apple a {
+    color: white;
+}
 .down_butt .app_android a,
 .down_butt .app_apple a {
     display: flex;
@@ -24,15 +27,14 @@
     align-items: center;
     gap: 12px;
 }
-.hh_2 > div .app_android {
+.hh_2 > div .app_android,
+.home_safety_sub .hs_sub_right .app_android {
     background-color: transparent;
     border: 1px solid black;
 }
-.hh_2 > div .app_apple {
+.hh_2 > div .app_apple,
+.home_safety_sub .hs_sub_right .app_apple {
     border: none;
-}
-.hh_2 > div .app_apple a {
-    color: white;
 }
 @media (max-width: 992px) {
     .down_butt {

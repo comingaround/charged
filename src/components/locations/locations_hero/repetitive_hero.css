@@ -16,7 +16,7 @@
     height: 65%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: column nowrap;
     gap: 32px;
 }
@@ -79,6 +79,7 @@
     .rh_right > div img {
         width: 100%;
         height: auto;
+        max-height: 150%;
     }
     .rh_left > div button {
         border: 1px solid white;

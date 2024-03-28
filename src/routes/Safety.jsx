@@ -1,10 +1,9 @@
-
+import Safety_hero from "../components/safety/safety_hero/safety_hero";
 
 function Safety() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Safety</h1>
+            <Safety_hero />
         </>
     );
 }

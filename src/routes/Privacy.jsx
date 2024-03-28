@@ -1,10 +1,9 @@
-
+import Privacy_hero from "../components/privacy/privacy_hero/privacy_hero";
 
 function Privacy() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Privacy Policy</h1>
+            <Privacy_hero />
         </>
     );
 }

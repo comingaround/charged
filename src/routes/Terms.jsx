@@ -1,10 +1,9 @@
-
+import Terms_hero from "../components/terms/terms_hero/terms_hero";
 
 function Terms() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Terms of Use</h1>
+            <Terms_hero />
         </>
     );
 }

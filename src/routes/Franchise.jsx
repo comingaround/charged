@@ -1,10 +1,9 @@
-
+import Franchise_hero from "../components/franchise/franchise_hero/franchise_hero";
 
 function Franchise() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Franchise</h1>
+            <Franchise_hero />
         </>
     );
 }

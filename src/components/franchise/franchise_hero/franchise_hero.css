@@ -1,0 +1,114 @@
+.franchise_hero {
+    width: 100%;
+    height: 100vh;
+}
+.fh_right,
+.fh_left {
+    padding: 0;
+}
+.fh_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fh_left > div {
+    width: 65%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 24px;
+}
+.fh_left > div h1 {
+    font-size: 8rem;
+    line-height: 128px;
+}
+.fh_left > div h6 {
+    font-size: 1.5rem;
+    line-height: 34px;
+    font-weight: 400;
+}
+.fh_right > div {
+    width: 100%;
+    height: 100vh;
+}
+.fh_left > div button {
+    align-self: flex-start;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 12px 24px;
+    text-align: center;
+}
+.fh_left > div button span {
+    padding-left: 8px;
+}
+.fh_right > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1560px) {
+    .fh_left > div {
+        width: 70%;
+        height: 70%;
+    }
+    .fh_left > div h1 {
+        font-size: 6rem;
+        line-height: 104px;
+    }
+    .fh_left > div h6 {
+        font-size: 1,5rem;
+    }
+}
+@media (max-width: 768px) {
+    .franchise_hero {
+        width: 100%;
+        height: auto;
+        padding-bottom: 70px;
+    }
+    .franchise_hero .row {
+        flex-wrap: wrap-reverse;
+    }
+    .fh_right > div {
+        margin-top: 72px;
+    }
+    .fh_left > div {
+        margin-top: 24px;
+        width: 90%;
+        height: 90%;
+        color: white;
+    }
+    .fh_right > div img {
+        width: 100%;
+        height: auto;
+    }
+    .fh_left > div button {
+        border: 1px solid white;
+        color: white;
+    }
+}
+@media (max-width: 526px) {
+    .franchise_hero {
+        padding-bottom: 0;
+    }
+    .fh_left > div {
+        margin-top: 128px;
+        width: 90%;
+        height: 90%;
+        color: black;
+    }
+    .fh_left > div h1 {
+        font-size: 4rem;
+        line-height: 68px;
+    }
+    .fh_left > div button {
+        border: 1px solid black;
+        color: black;
+    }
+}
+@media (max-width: 426px) {
+    .fh_left > div {
+        margin-top: 0;
+    }
+}

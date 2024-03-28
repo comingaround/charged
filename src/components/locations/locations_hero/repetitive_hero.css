@@ -1,0 +1,116 @@
+.repetitive_hero {
+    width: 100%;
+    height: 100vh;
+}
+.rh_right,
+.rh_left {
+    padding: 0;
+}
+.rh_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rh_left > div {
+    width: 65%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 32px;
+}
+.rh_left > div h1 {
+    font-size: 8rem;
+    line-height: 128px;
+}
+.rh_left > div h6 {
+    font-size: 1.5rem;
+    line-height: 34px;
+    font-weight: 400;
+}
+.rh_right > div {
+    width: 100%;
+    height: 100vh;
+}
+.rh_left > div > div {
+    align-self: flex-start;
+}
+.rh_right > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1560px) {
+    .rh_left > div {
+        width: 80%;
+        height: 80%;
+    }
+    .rh_left > div h1 {
+        font-size: 6rem;
+        line-height: 104px;
+    }
+    .rh_left > div h6 {
+        font-size: 1,5rem;
+    }
+    #root > div > div > div.col-lg-6.col-md-12.rh_left > div > h1 {
+        font-size: 4rem;
+        line-height: 74px;
+    }
+}
+@media (max-width: 768px) {
+    .repetitive_hero {
+        width: 100%;
+        height: auto;
+        padding-bottom: 70px;
+    }
+    .repetitive_hero .row {
+        flex-wrap: wrap-reverse;
+    }
+    .rh_right > div {
+        margin-top: 72px;
+    }
+    .rh_left > div {
+        margin-top: 24px;
+        width: 90%;
+        height: 90%;
+        color: white;
+    }
+    .rh_right > div img {
+        width: 100%;
+        height: auto;
+    }
+    .rh_left > div button {
+        border: 1px solid white;
+        color: white;
+    }
+}
+@media (max-width: 526px) {
+    .repetitive_hero {
+        padding-bottom: 0;
+    }
+    .rh_left > div {
+        margin-top: 128px;
+        width: 90%;
+        height: 90%;
+        color: black;
+    }
+    .rh_left > div h1 {
+        font-size: 4rem;
+        line-height: 68px;
+    }
+    .rh_left > div button {
+        border: 1px solid black;
+        color: black;
+    }
+    .rh_right > div img {
+        width: 100%;
+        height: auto;
+        max-height: 110%;
+    }
+}
+@media (max-width: 426px) {
+    .rh_left > div {
+        margin-top: 0;
+    }
+}

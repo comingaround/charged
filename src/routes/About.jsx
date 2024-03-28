@@ -1,10 +1,9 @@
-
+import About_hero from "../components/about/about_hero/about_hero";
 
 function About() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>About</h1>
+            <About_hero />
         </>
     );
 }

@@ -1,10 +1,9 @@
-
+import Driver_hero from "../components/driver/driver_hero/driver_hero";
 
 function Driver() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Driver</h1>
+            <Driver_hero />
         </>
     );
 }

@@ -36,8 +36,30 @@
 .home_safety_sub .hs_sub_right .app_apple {
     border: none;
 }
+.repetitive_hero .rh_left > div > div > div .app_android {
+    border: 1px solid black;
+}
 @media (max-width: 992px) {
     .down_butt {
         justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .repetitive_hero .rh_left > div > div > div .app_android {
+        background-color: black;
+    }
+    .repetitive_hero .rh_left > div > div > div .app_android a {
+        color: white;
+    }
+    .repetitive_hero .rh_left > div > div > div .app_apple {
+        border: none;
+    }
+}
+@media (max-width: 576px) {
+    .repetitive_hero .rh_left > div > div > div .app_android {
+        background-color: white;
+    }
+    .repetitive_hero .rh_left > div > div > div .app_android a {
+        color: black;
     }
 }

@@ -1,10 +1,9 @@
-
+import Taxi_hero from "../components/taxi/taxi_hero/taxi_hero";
 
 function Taxi() {
     return(
         <>  
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Taxi</h1>
+            <Taxi_hero />
         </>
     );
 }

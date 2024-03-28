@@ -5,10 +5,21 @@
     position: fixed;
     width: 100%;
     height: 72px;
-    z-index: 100000;
+    z-index: 100;
     padding-right: 64px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+}
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); 
+    -webkit-mask-image: linear-gradient(to right, black 30%, transparent 40%);
+    mask-image: linear-gradient(to right, black 30%, transparent 40%);
+    z-index: -1;
 }
 .navbar-nav {
     width: 100%;

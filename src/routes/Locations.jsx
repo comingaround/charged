@@ -1,10 +1,9 @@
-
+import Locations_hero from "../components/locations/locations_hero/locations_hero";
 
 function Locations() {
     return(
         <>
-            <div style={{paddingTop: "100px"}}></div>
-            <h1>Locations</h1>
+            <Locations_hero />
         </>
     );
 }
